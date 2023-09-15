@@ -2,14 +2,27 @@
   "name": "elysia-app",
   "version": "1.0.50",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "test": "bun test",
+    "dev": "bun run --watch src/server/index.tsx"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@apollo/server": "^4.9.3",
+    "@elysiajs/apollo": "^0.6.0",
+    "@elysiajs/cors": "^0.6.0",
+    "@elysiajs/cron": "^0.6.0",
+    "@elysiajs/eden": "^0.6.5",
+    "@elysiajs/html": "^0.6.5",
+    "@elysiajs/static": "^0.6.0",
+    "@elysiajs/swagger": "^0.6.2",
+    "@prisma/client": "^5.3.0",
+    "elysia": "latest",
+    "graphql": "^16.8.0",
+    "mongoose": "^7.5.1",
+    "prettier": "^3.0.3"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "prisma": "^5.3.0"
   },
   "module": "src/index.js"
 }

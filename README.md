@@ -1,10 +1,6 @@
-# Elysia with Bun runtime
+# Elysia Demo
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
-```bash
-bun create elysia ./elysia-example
-```
+> TypeScript framework supercharged by Bun with End-to-End Type Safety, unified type system and outstanding developer experience - [ElysiaJS](https://elysiajs.com/)
 
 ## Development
 To start the development server run:
@@ -12,4 +8,4 @@ To start the development server run:
 bun run dev
 ```
 
-Open http://localhost:3000/ with your browser to see the result.
+Open http://localhost:8880/ with your browser to see the result.

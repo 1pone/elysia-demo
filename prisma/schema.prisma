@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model users {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  bio         String
+  /// Could not determine type: the field only had null or empty values in the sample set.
+  communities Json?
+  id_         String   @map("id")
+  image       String
+  name        String
+  onboarded   Boolean
+  threads     String[]
+  username    String
+}
